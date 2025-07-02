@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Cadastro de Contatos</header>
+  <div class="main-container">
+    <input type="text" id="nome" placeholder="Nome Completo">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="telefone" placeholder="Telefone">
+    <div style="margin-top: 15px;">
+      <button class="salvar" onclick="adicionar()">Salvar</button>
+      <button class="atualizar" onclick="editar()">Atualizar</button>
+      <button class="cancelar" onclick="limpar()">Cancelar</button>
+      <button class="excluir" onclick="remover()">Excluir</button>
+    </div>
+    <div style="margin-top: 20px;">
+      <button class="navegacao" onclick="primeiro()">|&lt;</button>
+      <button class="navegacao" onclick="anterior()">&lt;</button>
+      <button class="navegacao" onclick="proximo()">&gt;</button>
+      <button class="navegacao" onclick="ultimo()">&gt;|</button>
+    </div>
+    <p id="info"></p>
+  </div>
+  <script src="cadastro.js"></script>
+</body>
+</html>
